@@ -5,11 +5,10 @@ import web3 from './web3';
 import lottery from './lottery';
 
 class App extends Component {
-  constructor(props) {
-    super(props);
+  state = {
+    manager: '',
+  };
 
-    this.state = { manager: '' };
-  }
   async componentDidMount() {
     // default account is first account in MetaMask
     const manager = await lottery.methods.manager().call();
