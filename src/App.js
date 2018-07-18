@@ -56,9 +56,9 @@ class App extends Component {
     return (
       <div className="App">
         <h2>Lottery Contract</h2>
-        <p className="italics">requires MetaMask Chrome extension</p>
+        <p className="italics">requires <a href="https://metamask.io/">MetaMask Chrome extension</a></p>
         <p>
-          This contract is managed by <span className="green">{this.state.manager}</span>.
+          This contract is managed by <span className="green">{this.state.manager}</span>.<br />
           There are currently <span className="bold">{this.state.players.length}</span> people competing to win <span className="bold">{web3.utils.fromWei(this.state.balance, 'ether')} ether</span>!
         </p>
         
