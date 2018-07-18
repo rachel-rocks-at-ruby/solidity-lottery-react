@@ -14,3 +14,16 @@
 .italics {
   font-style: italic;
 }
+
+.pick-winner {
+  background-color: #36a030;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+  padding: 12px 24px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+}

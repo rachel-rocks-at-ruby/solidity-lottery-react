@@ -69,7 +69,7 @@ class App extends Component {
         >
           <h4>Want to try your luck?</h4>
           <div>
-            <label>Amount of ether to enter</label>
+            <label>Amount of ether to enter </label>
             <input
               value={this.state.value}
               onChange={e => this.setState({ value: e.target.value })}
@@ -81,7 +81,7 @@ class App extends Component {
         <hr />
 
         <h4>Ready to pick a winner?</h4>
-        <button onClick={this.onClick}>Pick a winner</button>
+        <button className="pick-winner" onClick={this.onClick}>Pick a winner</button>
 
         <hr />
 
